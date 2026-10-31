@@ -1,0 +1,60 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Milikey Energy group site: plain static files on Render's CDN.
+# If this folder is not the repository root, add `rootDir: milikey-energy`.
+#
+# After the first deploy, in the Render dashboard:
+#   Settings > Custom Domains > add milikey-energy.com and www.milikey-energy.com
+# then create the DNS records Render shows. The subdomain
+# mobile-technologies.milikey-energy.com belongs to the other service
+# and is not touched by this file.
+services:
+  - type: web
+    name: milikey-energy
+    runtime: static
+    # Publish only what the site needs (not prompt.md or the source flyer).
+    buildCommand: >-
+      rm -rf dist && mkdir -p dist/assets dist/en &&
+      cp index.html 404.html robots.txt sitemap.xml milikey-logo.svg dist/ &&
+      cp en/index.html dist/en/ &&
+      cp assets/parts.jpg assets/strip.jpg dist/assets/
+    staticPublishPath: dist
+    pullRequestPreviewsEnabled: false
+    headers:
+      # Security. The page uses Google Fonts and two inline blocks (style, script).
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: Permissions-Policy
+        value: camera=(), microphone=(), geolocation=()
+      # Caching: pages revalidate so edits show at once; images and logo cache.
+      - path: /
+        name: Cache-Control
+        value: no-cache
+      - path: /index.html
+        name: Cache-Control
+        value: no-cache
+      - path: /en/*
+        name: Cache-Control
+        value: no-cache
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=86400, stale-while-revalidate=604800
+      - path: /sitemap.xml
+        name: Cache-Control
+        value: no-cache
+      - path: /robots.txt
+        name: Cache-Control
+        value: no-cache
+      - path: /milikey-logo.svg
+        name: Cache-Control
+        value: public, max-age=86400
