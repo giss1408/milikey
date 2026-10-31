@@ -16,7 +16,7 @@ services:
       rm -rf dist && mkdir -p dist/assets dist/en &&
       cp index.html 404.html robots.txt sitemap.xml milikey-logo.svg dist/ &&
       cp en/index.html dist/en/ &&
-      cp assets/parts.jpg assets/strip.jpg dist/assets/
+      cp assets/parts.jpg assets/strip.jpg assets/og.jpg dist/assets/
     staticPublishPath: dist
     pullRequestPreviewsEnabled: false
     headers:
