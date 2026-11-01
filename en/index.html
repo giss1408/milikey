@@ -121,6 +121,16 @@ h2.big{font-size:clamp(2rem,4.4vw,3.4rem);font-weight:800;max-width:20ch;text-wr
 .cat p{color:#b9c9de;font-size:.98rem}
 .strip{margin-top:28px;border-radius:8px;overflow:hidden}
 .strip img{width:100%;display:block;max-height:180px;object-fit:cover}
+.equip{margin-top:64px}
+.equip-h{font-family:'Bricolage Grotesque',sans-serif;font-size:1.6rem;color:var(--ink)}
+.equip-sub{color:var(--muted);margin-top:6px}
+.eq-grid{margin-top:24px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.eq-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.eq-card img{width:100%;height:auto;display:block;aspect-ratio:3/2;object-fit:cover}
+.eq-card figcaption{padding:16px 18px 20px}
+.eq-card h3{font-size:1.1rem;color:var(--ink)}
+.eq-card p{margin-top:6px;color:var(--muted);font-size:.95rem}
+@media(max-width:900px){.eq-grid{grid-template-columns:1fr}}
 .strip-cap{margin-top:10px;font-size:.9rem;color:var(--muted)}
 @media(max-width:900px){.parts-top,.parts-img{grid-template-columns:1fr}.parts-img img{min-height:240px}.cat{padding:10px 24px}}
 
@@ -296,6 +306,25 @@ footer em{font-family:'Bricolage Grotesque';font-style:italic;color:#fff}
       <img width="853" height="165" loading="lazy" src="../assets/strip.jpg" alt="Contactors, bearings, motors, filters and belts, pumps and valves">
     </figure>
     <p class="strip-cap">Product families: electrical switchgear, bearings, motors, filtration and belts, pumps and valves.</p>
+
+    <div class="equip">
+      <h3 class="equip-h">Backup power equipment</h3>
+      <p class="equip-sub">Generators, inverters and regulators.</p>
+      <div class="eq-grid">
+      <figure class="eq-card">
+        <img width="600" height="400" loading="lazy" src="../assets/himoinsa-300kva.svg" alt="Himoinsa 300 kVA generator set">
+        <figcaption><h3>Himoinsa generator set</h3><p>300 kVA diesel generator set for standby and continuous power.</p></figcaption>
+      </figure>
+      <figure class="eq-card">
+        <img width="600" height="400" loading="lazy" src="../assets/green-power-30kva.svg" alt="Green Power 30 kVA inverter">
+        <figcaption><h3>Green Power inverter</h3><p>30 kVA inverter protecting your critical loads against outages.</p></figcaption>
+      </figure>
+      <figure class="eq-card">
+        <img width="600" height="400" loading="lazy" src="../assets/delta-75kva.svg" alt="Delta 75 kVA voltage regulator">
+        <figcaption><h3>Delta regulator</h3><p>75 kVA voltage regulator stabilising supply to sensitive equipment.</p></figcaption>
+      </figure>
+      </div>
+    </div>
   </div>
 </section>
 

@@ -121,6 +121,16 @@ h2.big{font-size:clamp(2rem,4.4vw,3.4rem);font-weight:800;max-width:20ch;text-wr
 .cat p{color:#b9c9de;font-size:.98rem}
 .strip{margin-top:28px;border-radius:8px;overflow:hidden}
 .strip img{width:100%;display:block;max-height:180px;object-fit:cover}
+.equip{margin-top:64px}
+.equip-h{font-family:'Bricolage Grotesque',sans-serif;font-size:1.6rem;color:var(--ink)}
+.equip-sub{color:var(--muted);margin-top:6px}
+.eq-grid{margin-top:24px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.eq-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.eq-card img{width:100%;height:auto;display:block;aspect-ratio:3/2;object-fit:cover}
+.eq-card figcaption{padding:16px 18px 20px}
+.eq-card h3{font-size:1.1rem;color:var(--ink)}
+.eq-card p{margin-top:6px;color:var(--muted);font-size:.95rem}
+@media(max-width:900px){.eq-grid{grid-template-columns:1fr}}
 .strip-cap{margin-top:10px;font-size:.9rem;color:var(--muted)}
 @media(max-width:900px){.parts-top,.parts-img{grid-template-columns:1fr}.parts-img img{min-height:240px}.cat{padding:10px 24px}}
 
@@ -214,7 +224,7 @@ footer em{font-family:'Bricolage Grotesque';font-style:italic;color:#fff}
 
   <div class="wrap">
     <h1>L'industrie et le numérique, <span>sous une même énergie.</span></h1>
-    <p class="lead">Milikey Energy est un groupe de deux sociétés : l'une fournit les pièces qui maintiennent les équipements en marche, l'autre construit les logiciels mobiles des entreprises de demain.</p>
+    <p class="lead">Milikey Energy est un groupe de deux sociétés : l'une fournit des pièces de rechanges et des équipements en énergie secours ( groupe électrogène, onduleur, régulateur), l'autre construit les logiciels mobiles des entreprises de demain.</p>
 
     <div class="grid-sch go" aria-hidden="true">
       <svg class="sch" viewBox="0 0 1132 120" preserveAspectRatio="none">
@@ -267,7 +277,7 @@ footer em{font-family:'Bricolage Grotesque';font-style:italic;color:#fff}
         <p class="kicker">Milikey Energy Parts</p>
         <h2 class="big">Une pièce manquante peut bloquer votre activité.</h2>
       </div>
-      <p>Ne laissez pas un arrêt de matériel impacter votre production. Nous sourçons les pièces de rechange dont vos équipements ont besoin, des références courantes aux pièces introuvables.</p>
+      <p>Ne laissez pas un arrêt de matériel impacter votre production. Nous trouvons les pièces de rechange dont vos équipements ont besoin, des références courantes aux pièces introuvables.</p>
     </div>
 
     <div class="parts-img">
@@ -296,6 +306,25 @@ footer em{font-family:'Bricolage Grotesque';font-style:italic;color:#fff}
       <img width="853" height="165" loading="lazy" src="assets/strip.jpg" alt="Contacteurs, roulements, moteurs, filtres et courroies, pompes et vannes">
     </figure>
     <p class="strip-cap">Familles de produits : appareillage électrique, roulements, moteurs, filtration et courroies, pompes et vannes.</p>
+
+    <div class="equip">
+      <h3 class="equip-h">Équipements en énergie secours</h3>
+      <p class="equip-sub">Groupes électrogènes, onduleurs et régulateurs.</p>
+      <div class="eq-grid">
+      <figure class="eq-card">
+        <img width="600" height="400" loading="lazy" src="assets/himoinsa-300kva.svg" alt="Groupe électrogène Himoinsa 300 kVA">
+        <figcaption><h3>Groupe électrogène Himoinsa</h3><p>Groupe électrogène de 300 kVA pour le secours et la production continue.</p></figcaption>
+      </figure>
+      <figure class="eq-card">
+        <img width="600" height="400" loading="lazy" src="assets/green-power-30kva.svg" alt="Onduleur Green Power 30 kVA">
+        <figcaption><h3>Onduleur Green Power</h3><p>Onduleur de 30 kVA protégeant vos charges critiques des coupures.</p></figcaption>
+      </figure>
+      <figure class="eq-card">
+        <img width="600" height="400" loading="lazy" src="assets/delta-75kva.svg" alt="Régulateur Delta 75 kVA">
+        <figcaption><h3>Régulateur Delta</h3><p>Régulateur de tension de 75 kVA pour stabiliser l’alimentation des équipements sensibles.</p></figcaption>
+      </figure>
+      </div>
+    </div>
   </div>
 </section>
 
