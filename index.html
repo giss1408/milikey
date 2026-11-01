@@ -127,6 +127,7 @@ h2.big{font-size:clamp(2rem,4.4vw,3.4rem);font-weight:800;max-width:20ch;text-wr
 .eq-grid{margin-top:24px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .eq-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .eq-card img{width:100%;height:auto;display:block;aspect-ratio:3/2;object-fit:cover}
+.eq-card img.fit{object-fit:contain;background:#fff}
 .eq-card figcaption{padding:16px 18px 20px}
 .eq-card h3{font-size:1.1rem;color:var(--ink)}
 .eq-card p{margin-top:6px;color:var(--muted);font-size:.95rem}
@@ -303,7 +304,7 @@ footer em{font-family:'Bricolage Grotesque';font-style:italic;color:#fff}
     </div>
 
     <figure class="strip">
-      <img width="853" height="165" loading="lazy" src="assets/strip.jpg" alt="Contacteurs, roulements, moteurs, filtres et courroies, pompes et vannes">
+      <img width="853" height="165" loading="lazy" decoding="async" src="assets/strip.jpg" alt="Contacteurs, roulements, moteurs, filtres et courroies, pompes et vannes">
     </figure>
     <p class="strip-cap">Familles de produits : appareillage électrique, roulements, moteurs, filtration et courroies, pompes et vannes.</p>
 
@@ -312,16 +313,16 @@ footer em{font-family:'Bricolage Grotesque';font-style:italic;color:#fff}
       <p class="equip-sub">Groupes électrogènes, onduleurs et régulateurs.</p>
       <div class="eq-grid">
       <figure class="eq-card">
-        <img width="600" height="400" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDAwIj48cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzBhMWEzMCIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNmYTlmMCIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxyZWN0IHg9IjE1MCIgeT0iOTAiIHdpZHRoPSIzMDAiIGhlaWdodD0iMTQwIiByeD0iMTAiLz48cmVjdCB4PSIxOTAiIHk9IjEyMCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSI4MCIvPjxjaXJjbGUgY3g9IjM4MCIgY3k9IjE2MCIgcj0iMzAiLz48cGF0aCBkPSJNMTgwIDIzMHYyME00MjAgMjMwdjIwIi8+PHBhdGggZD0iTTI5MCA2MGwtMTQgMjRoMjBsLTE0IDI0IiBzdHJva2U9IiNmMmI4MWMiLz48L2c+PHRleHQgeD0iMzAwIiB5PSIzMjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjM0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmIj5IaW1vaW5zYTwvdGV4dD48dGV4dCB4PSIzMDAiIHk9IjM2MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNmMmI4MWMiPjMwMCBrVkE8L3RleHQ+PC9zdmc+Cg==" alt="Groupe électrogène Himoinsa 300 kVA">
-        <figcaption><h3>Groupe électrogène Himoinsa</h3><p>Groupe électrogène de 300 kVA pour le secours et la production continue.</p></figcaption>
+        <img class="fit" width="542" height="306" loading="lazy" decoding="async" src="assets/himoinsa-hfw500.webp" alt="Groupe électrogène Himoinsa HFW 500 T5">
+        <figcaption><h3>Groupe électrogène Himoinsa HFW 500 T5</h3><p>Groupe électrogène diesel pour le secours et la production continue.</p></figcaption>
       </figure>
       <figure class="eq-card">
-        <img width="600" height="400" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDAwIj48cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzBhMWEzMCIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNmYTlmMCIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxyZWN0IHg9IjE5MCIgeT0iNjAiIHdpZHRoPSIyMjAiIGhlaWdodD0iMTgwIiByeD0iMTAiLz48cmVjdCB4PSIyMTUiIHk9Ijg1IiB3aWR0aD0iODAiIGhlaWdodD0iNDAiLz48Y2lyY2xlIGN4PSIzNTUiIGN5PSIxMDUiIHI9IjE0Ii8+PHBhdGggZD0iTTIxNSAxNjBoMTcwTTIxNSAxOTBoMTcwTTIxNSAyMjBoMTcwIi8+PHBhdGggZD0iTTMxMCAxMDBsLTEwIDE4aDE0bC0xMCAxOCIgc3Ryb2tlPSIjZjJiODFjIi8+PC9nPjx0ZXh0IHg9IjMwMCIgeT0iMzIwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzNCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZiI+R3JlZW4gUG93ZXI8L3RleHQ+PHRleHQgeD0iMzAwIiB5PSIzNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjZjJiODFjIj5PbmR1bGV1ciAzMCBrVkE8L3RleHQ+PC9zdmc+Cg==" alt="Onduleur Green Power 30 kVA">
-        <figcaption><h3>Onduleur Green Power</h3><p>Onduleur de 30 kVA protégeant vos charges critiques des coupures.</p></figcaption>
+        <img width="720" height="480" loading="lazy" decoding="async" src="assets/green-power-ups.webp" alt="Onduleur Green Power">
+        <figcaption><h3>Onduleur Green Power</h3><p>Onduleur en ligne protégeant vos charges critiques des coupures.</p></figcaption>
       </figure>
       <figure class="eq-card">
-        <img width="600" height="400" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDAwIj48cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzBhMWEzMCIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNmYTlmMCIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxyZWN0IHg9IjE3MCIgeT0iNzAiIHdpZHRoPSIyNjAiIGhlaWdodD0iMTcwIiByeD0iMTAiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSIxNTAiIHI9IjUyIi8+PHBhdGggZD0iTTMwMCAxNTBsMzAtMzAiLz48cGF0aCBkPSJNMjE1IDEwMGgyME0zNjUgMTAwaDIwTTIxNSAyMTVoMTcwIi8+PC9nPjx0ZXh0IHg9IjMwMCIgeT0iMzIwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzNCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZiI+RGVsdGE8L3RleHQ+PHRleHQgeD0iMzAwIiB5PSIzNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjZjJiODFjIj5Sw6lndWxhdGV1ciA3NSBrVkE8L3RleHQ+PC9zdmc+Cg==" alt="Régulateur Delta 75 kVA">
-        <figcaption><h3>Régulateur Delta</h3><p>Régulateur de tension de 75 kVA pour stabiliser l’alimentation des équipements sensibles.</p></figcaption>
+        <img class="fit" width="760" height="682" loading="lazy" decoding="async" src="assets/delta-srv33.webp" alt="Régulateur Delta SRV 33">
+        <figcaption><h3>Régulateur Delta SRV 33</h3><p>Régulateur de tension pour stabiliser l’alimentation des équipements sensibles.</p></figcaption>
       </figure>
       </div>
     </div>
