@@ -14,7 +14,7 @@ services:
     # Publish only what the site needs (not prompt.md or the source flyer).
     buildCommand: >-
       rm -rf dist && mkdir -p dist/assets dist/en &&
-      cp index.html 404.html robots.txt sitemap.xml milikey-logo.svg dist/ &&
+      cp index.html 404.html robots.txt sitemap.xml dist/ &&
       cp en/index.html dist/en/ &&
       cp assets/* dist/assets/
     staticPublishPath: dist
@@ -55,6 +55,3 @@ services:
       - path: /robots.txt
         name: Cache-Control
         value: no-cache
-      - path: /milikey-logo.svg
-        name: Cache-Control
-        value: public, max-age=86400

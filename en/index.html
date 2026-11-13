@@ -26,8 +26,8 @@
 <meta name="twitter:title" content="Milikey Energy – Industrial spare parts and mobile software">
 <meta name="twitter:description" content="Milikey Energy group: industrial, electrical and electromechanical spare parts, plus Mobile Business Technologies, mobile SaaS development. Quote from a reference or a photo.">
 <meta name="twitter:image" content="https://milikey-energy.com/assets/og.jpg">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://milikey-energy.com/#org", "name": "Milikey Energy", "url": "https://milikey-energy.com/", "logo": "https://milikey-energy.com/milikey-logo.svg", "email": "info@milikey-energy.com", "slogan": "Your need, our priority.", "founder": {"@type": "Person", "name": "Bienvenue Kouadio", "jobTitle": "Chief Executive Officer"}, "description": "Milikey Energy group: industrial, electrical and electromechanical spare parts, plus Mobile Business Technologies, mobile SaaS development. Quote from a reference or a photo.", "inLanguage": "en", "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Electrical parts"}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Industrial parts"}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Electromechanical parts"}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Specific references"}}], "subOrganization": {"@type": "Organization", "name": "Mobile Business Technologies", "url": "https://mobile-technologies.milikey-energy.com/"}, "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "info@milikey-energy.com", "availableLanguage": ["fr", "en"]}}, {"@type": "WebSite", "@id": "https://milikey-energy.com/#site", "url": "https://milikey-energy.com/", "name": "Milikey Energy", "publisher": {"@id": "https://milikey-energy.com/#org"}, "inLanguage": ["fr", "en"]}]}</script>
-<link rel="icon" href="../milikey-logo.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://milikey-energy.com/#org", "name": "Milikey Energy", "url": "https://milikey-energy.com/", "logo": "https://milikey-energy.com/assets/logo.webp", "email": "info@milikey-energy.com", "slogan": "Your need, our priority.", "founder": {"@type": "Person", "name": "Bienvenue Kouadio", "jobTitle": "Chief Executive Officer"}, "description": "Milikey Energy group: industrial, electrical and electromechanical spare parts, plus Mobile Business Technologies, mobile SaaS development. Quote from a reference or a photo.", "inLanguage": "en", "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Electrical parts"}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Industrial parts"}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Electromechanical parts"}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Specific references"}}], "subOrganization": {"@type": "Organization", "name": "Mobile Business Technologies", "url": "https://mobile-technologies.milikey-energy.com/"}, "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "info@milikey-energy.com", "availableLanguage": ["fr", "en"]}}, {"@type": "WebSite", "@id": "https://milikey-energy.com/#site", "url": "https://milikey-energy.com/", "name": "Milikey Energy", "publisher": {"@id": "https://milikey-energy.com/#org"}, "inLanguage": ["fr", "en"]}]}</script>
+<link rel="icon" href="../assets/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
@@ -56,7 +56,7 @@ a{color:inherit}
 /* NAV */
 .nav{position:absolute;inset:0 0 auto 0;z-index:5;padding:22px 0}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.nav img{height:58px;display:block}
+.nav img{height:72px;width:auto;display:block}
 .nav ul{display:flex;gap:30px;list-style:none;font-weight:500;font-size:.95rem}
 .nav ul a{color:#cfdcee;text-decoration:none}
 .nav ul a:hover{color:#fff}
@@ -124,6 +124,9 @@ h2.big{font-size:clamp(2rem,4.4vw,3.4rem);font-weight:800;max-width:20ch;text-wr
 .equip{margin-top:64px}
 .equip-h{font-family:'Bricolage Grotesque',sans-serif;font-size:1.6rem;color:var(--ink)}
 .equip-sub{color:var(--muted);margin-top:6px}
+.eq-banner{margin-top:24px;position:relative;border-radius:12px;overflow:hidden}
+.eq-banner img{width:100%;height:auto;display:block;aspect-ratio:21/9;object-fit:cover}
+.eq-banner figcaption{position:absolute;inset:auto 0 0 0;padding:40px 24px 18px;color:#fff;font-weight:500;background:linear-gradient(transparent,rgba(8,22,43,.85))}
 .eq-grid{margin-top:24px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .eq-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .eq-card img{width:100%;height:auto;display:block;aspect-ratio:3/2;object-fit:cover}
@@ -171,7 +174,7 @@ h2.big{font-size:clamp(2rem,4.4vw,3.4rem);font-weight:800;max-width:20ch;text-wr
 
 footer{background:var(--navy);color:#9fb2cb;padding:48px 0;font-size:.95rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
-footer img{height:54px}
+footer img{height:64px;width:auto}
 footer a{color:#cfdcee}
 footer em{font-family:'Bricolage Grotesque';font-style:italic;color:#fff}
 
@@ -212,12 +215,11 @@ footer em{font-family:'Bricolage Grotesque';font-style:italic;color:#fff}
 <header class="hero" id="top">
   <nav class="nav" aria-label="Main navigation">
     <div class="wrap">
-      <a href="#top" aria-label="Milikey Energy, home"><img src="../milikey-logo.svg" alt="Milikey Energy"></a>
+      <a href="#top" aria-label="Milikey Energy, home"><img src="../assets/logo.webp" width="86" height="72" alt="Milikey Energy"></a>
       <ul>
         <li><a href="#groupe">The group</a></li>
         <li><a href="#pieces">Spare parts</a></li>
         <li><a href="#methode">How we work</a></li>
-        <li><a href="#direction">Leadership</a></li>
       </ul>
       <div class="right"><a class="lang" href="../" hreflang="fr" lang="fr">FR</a><a class="cta" href="#contact">Contact us</a></div>
     </div>
@@ -276,9 +278,29 @@ footer em{font-family:'Bricolage Grotesque';font-style:italic;color:#fff}
     <div class="parts-top">
       <div>
         <p class="kicker">Milikey Energy Parts</p>
-        <h2 class="big">One missing part can stop your operations.</h2>
+        <h2 class="big">A power cut or a missing part can stop your operations.</h2>
       </div>
-      <p>Don't let equipment downtime hit your production. We source the spare parts your equipment needs, from common references to parts nobody stocks.</p>
+      <p>First, we supply backup power equipment (generators, UPS units, voltage regulators) so your production keeps running. Second, we source the spare parts your equipment needs, from common references to parts nobody stocks.</p>
+    </div>
+
+    <div class="equip">
+      <h3 class="equip-h">Backup power equipment</h3>
+      <p class="equip-sub">Generators, inverters and regulators.</p>
+      <figure class="eq-banner"><img width="720" height="411" loading="lazy" decoding="async" src="../assets/solaire.webp" alt="Solar panels at sunrise"><figcaption>Solar energy: a sustainable option to power your sites.</figcaption></figure>
+      <div class="eq-grid">
+      <figure class="eq-card">
+        <img class="fit" width="542" height="306" loading="lazy" decoding="async" src="../assets/himoinsa-hfw500.webp" alt="Himoinsa HFW 500 T5 generator set">
+        <figcaption><h3>Himoinsa HFW 500 T5 generator set</h3><p>Diesel generator set for standby and continuous power.</p></figcaption>
+      </figure>
+      <figure class="eq-card">
+        <img width="720" height="480" loading="lazy" decoding="async" src="../assets/green-power-ups.webp" alt="Green Power inverter">
+        <figcaption><h3>Green Power inverter</h3><p>Online inverter protecting your critical loads against outages.</p></figcaption>
+      </figure>
+      <figure class="eq-card">
+        <img class="fit" width="760" height="682" loading="lazy" decoding="async" src="../assets/delta-srv33.webp" alt="Delta SRV 33 regulator">
+        <figcaption><h3>Delta SRV 33 regulator</h3><p>Voltage regulator stabilising supply to sensitive equipment.</p></figcaption>
+      </figure>
+      </div>
     </div>
 
     <div class="parts-img">
@@ -308,24 +330,6 @@ footer em{font-family:'Bricolage Grotesque';font-style:italic;color:#fff}
     </figure>
     <p class="strip-cap">Product families: electrical switchgear, bearings, motors, filtration and belts, pumps and valves.</p>
 
-    <div class="equip">
-      <h3 class="equip-h">Backup power equipment</h3>
-      <p class="equip-sub">Generators, inverters and regulators.</p>
-      <div class="eq-grid">
-      <figure class="eq-card">
-        <img class="fit" width="542" height="306" loading="lazy" decoding="async" src="../assets/himoinsa-hfw500.webp" alt="Himoinsa HFW 500 T5 generator set">
-        <figcaption><h3>Himoinsa HFW 500 T5 generator set</h3><p>Diesel generator set for standby and continuous power.</p></figcaption>
-      </figure>
-      <figure class="eq-card">
-        <img width="720" height="480" loading="lazy" decoding="async" src="../assets/green-power-ups.webp" alt="Green Power inverter">
-        <figcaption><h3>Green Power inverter</h3><p>Online inverter protecting your critical loads against outages.</p></figcaption>
-      </figure>
-      <figure class="eq-card">
-        <img class="fit" width="760" height="682" loading="lazy" decoding="async" src="../assets/delta-srv33.webp" alt="Delta SRV 33 regulator">
-        <figcaption><h3>Delta SRV 33 regulator</h3><p>Voltage regulator stabilising supply to sensitive equipment.</p></figcaption>
-      </figure>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -337,19 +341,6 @@ footer em{font-family:'Bricolage Grotesque';font-style:italic;color:#fff}
       <div class="step"><h3>You write to us</h3><p>Simply send us the reference or a photo of your part.</p></div>
       <div class="step"><h3>We search</h3><p>We identify the sourcing solution that fits your need.</p></div>
       <div class="step"><h3>You decide</h3><p>We come back with a clear proposal so you can restart your operations.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="lead-sec" id="direction">
-  <div class="wrap lead-grid">
-    <blockquote>“Your need, our priority.”</blockquote>
-    <div class="side">
-      <div class="who">
-        <div class="mono" aria-hidden="true">BK</div>
-        <div><strong>Bienvenue Kouadio</strong><span>Chief Executive Officer, Milikey Energy</span></div>
-      </div>
-      <p>For any partnership, sourcing or development request, you speak directly with the group's management.</p>
     </div>
   </div>
 </section>
@@ -382,7 +373,7 @@ footer em{font-family:'Bricolage Grotesque';font-style:italic;color:#fff}
 
 <footer>
   <div class="wrap">
-    <img src="../milikey-logo.svg" alt="Milikey Energy">
+    <img src="../assets/logo.webp" width="86" height="72" alt="Milikey Energy">
     <em>Your need, our priority.</em>
     <span>© <span id="y">2026</span> Milikey Energy · <a href="mailto:info@milikey-energy.com">info@milikey-energy.com</a></span>
   </div>
